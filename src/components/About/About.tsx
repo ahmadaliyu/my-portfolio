@@ -16,7 +16,7 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            Hi there! I'm Ahmad Aliyu, a seasoned Software Engineer with over 8 years of experience building scalable web and mobile applications.
+            Hi there! I'm Ahmad Aliyu, a seasoned Frontend Engineeer (React | React Native | Nextjs) with over 8 years of experience building scalable web and mobile applications.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
@@ -33,23 +33,23 @@ export function About() {
           <div className="experience">
             <h3>Work Experience:</h3>
             
-            <h4>Software Engineer</h4>
+            <h4>Frontend Engineeer (React | React Native | Nextjs)</h4>
             <p>Kredi (Financial Institution) | Current</p>
             <p>Building fintech solutions for digital banking and payments</p>
             
-            <h4>Software Engineer</h4>
+            <h4>Frontend Engineeer (React | React Native | Nextjs)</h4>
             <p>Loopscribe</p>
             <p>Developed web and mobile applications</p>
             
-            <h4>Software Engineer</h4>
+            <h4>Frontend Engineeer (React | React Native | Nextjs)</h4>
             <p>White Axis (Ride-Hailing Platform)</p>
             <p>Built Bolt-like transportation solutions</p>
             
-            <h4>Software Engineer</h4>
+            <h4>Frontend Engineeer (React | React Native | Nextjs)</h4>
             <p>NippyEats</p>
             <p>Developed food delivery platform</p>
             
-            <h4>Software Engineer</h4>
+            <h4>Frontend Engineeer (React | React Native | Nextjs)</h4>
             <p>Everyfarmer Ecosystem</p>
             <p>Created agricultural technology solutions</p>
           </div>

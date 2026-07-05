@@ -1,10 +1,10 @@
-# Ahmad Aliyu - Software Engineer Portfolio
+# Ahmad Aliyu - Frontend Engineeer (React | React Native | Nextjs) Portfolio
 
 ![Ahmad Aliyu](https://res.cloudinary.com/dgyy2fwlu/image/upload/w_800,h_800,c_fill,g_face,r_max,b_rgb:ffffff,bo_20px_solid_rgb:ffffff/v1766940325/WhatsApp_Image_2025-12-28_at_17.44.11_x4uc2n.jpg)
  
 ## About Me
 
-This is my professional portfolio website showcasing my experience as a Software Engineer with 8+ years in building scalable web and mobile applications.
+This is my professional portfolio website showcasing my experience as a Frontend Engineeer (React | React Native | Nextjs) with 8+ years in building scalable web and mobile applications.
 
 I specialize in:
 - **Mobile Development**: React Native, Kotlin
