@@ -15,7 +15,9 @@ Professional portfolio covering web, mobile, backend development, AI, and DevOps
 
 Introduction, grouped technical skills, engineering approach, selected work and contributions, resume download, and contact links. Selected work includes LoopScribe, Global Cargo Logistics, WhiteAxis, Kredi, NippyEats, and Everyfarmer Ecosystem.
 
-The site uses React, TypeScript, and Styled Components. Content is maintained in `src/components/Hero`, `About`, `Project`, and `Contact`; search and social metadata live in `public/index.html`. The existing downloadable resume is `src/assets/AHMADEE_PT.pdf`.
+The site uses React, TypeScript, and Styled Components. Content is maintained in `src/components/Hero`, `About`, `Project`, and `Contact`; search and social metadata live in `public/index.html`. The downloadable resume is `src/assets/Ahmad_Aliyu_Software_Engineer_Resume.pdf`.
+
+To update the resume, edit `scripts/generate_resume.py` and run it with Python with `reportlab` and `pypdf` installed. It generates the two-page PDF in `output/pdf/`, verifies the page count and core skills, and copies the result into the site's assets. Visually review both pages after changes.
 
 ## Development
 
