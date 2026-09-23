@@ -32,10 +32,11 @@ export function Header() {
             Home
           </NavHashLink>
           <NavHashLink smooth to="#about" onClick={closeMenu}>
-            About me
+            About
           </NavHashLink>
+          <NavHashLink smooth to="#skills" onClick={closeMenu}>Skills</NavHashLink>
           <NavHashLink smooth to="#project" onClick={closeMenu}>
-            Project
+            Experience
           </NavHashLink>
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
@@ -47,7 +48,15 @@ export function Header() {
         <div
           aria-expanded={isActive ? 'true' : 'false'}
           aria-haspopup="true"
-          aria-label={isActive ? 'Fechar menu' : 'Abrir menu'}
+          aria-label={isActive ? 'Close menu' : 'Open menu'}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault()
+              setActive(!isActive)
+            }
+          }}
           className={isActive ? 'menu active' : 'menu'}
           onClick={() => {
             setActive(!isActive)

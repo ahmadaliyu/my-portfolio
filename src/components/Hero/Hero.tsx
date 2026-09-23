@@ -18,14 +18,15 @@ export function Hero() {
           <h1>Ahmad Aliyu</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h3>Frontend Engineeer (React | React Native | Nextjs)</h3>
+          <h3>Software Engineer | Web, Mobile &amp; Backend</h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">8+ Years Experience</p>
+          <p className="small-resume">8+ years building software across industries. I turn product requirements into usable interfaces, connected services, and maintainable applications.</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
           <BrowserRouter>
-            <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
+            <NavHashLink smooth to="#project" className="work-link">View my work</NavHashLink>
+            <NavHashLink smooth to="#contact" className="button">Let's talk</NavHashLink>
           </BrowserRouter>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
@@ -54,7 +55,7 @@ export function Hero() {
       </div>
       <div className="hero-image">
         <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <img src={Illustration} alt="Ilustração" />
+          <img src={Illustration} alt="Software development illustration" />
         </ScrollAnimation>
       </div>
     </Container>

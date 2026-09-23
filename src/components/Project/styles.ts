@@ -3,6 +3,10 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   margin-top: 15rem;
+  .section-intro { text-align: center; max-width: 75rem; margin: 0 auto 3rem; line-height: 1.7; }
+  .work-links { margin-top: 3rem; }
+  .work-links a { color: inherit; text-decoration: underline; }
+  h4 { margin-bottom: 1rem; }
   
   h2{
     text-align: center;
@@ -35,7 +39,7 @@ export const Container = styled.section`
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: var(--blue);
+        color: var(--green);
         margin-bottom: 3.6rem;
         .project-links{
           display: flex;
@@ -52,7 +56,7 @@ export const Container = styled.section`
       }
 
       p{
-        letter-spacing: 0.12rem;
+        line-height: 1.7;
         margin-bottom: 2rem;
         a{
           color: #FFFF;
@@ -68,10 +72,11 @@ export const Container = styled.section`
         margin-top: auto;
         .tech-list{
           display: flex;
+          flex-wrap: wrap;
           align-items: center;
           gap: 2rem;
           font-size: 1.4rem;
-          opacity: 0.6;
+          opacity: 0.9;
         }
       }
 

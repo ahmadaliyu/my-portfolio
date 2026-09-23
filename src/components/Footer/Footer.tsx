@@ -9,7 +9,7 @@ export function Footer() {
     <Container className="footer">
       <div>
         <p>
-          This Website was made with <img src={reactIcon} alt="React" />
+          © {new Date().getFullYear()} Ahmad Aliyu. Built with <img src={reactIcon} alt="React" />
           {/* <span>❤️</span> */}
         </p>
       </div>

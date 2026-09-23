@@ -1,108 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 12rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-
-  .hard-skills{
-    margin-top: 1.6rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.8rem;
+  margin-top: 10rem;
+  h2 { font-size: 3rem; margin-bottom: 2rem; color: var(--green); }
+  h3 { font-size: 2rem; margin-bottom: 1rem; }
+  p { font-size: 1.8rem; line-height: 1.75; margin-bottom: 1.6rem; }
+  .about-intro { display: grid; grid-template-columns: 2fr 1fr; gap: 5rem; align-items: center; }
+  .portrait { width: 100%; max-width: 320px; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; justify-self: center; }
+  .skills-section, .approach { margin-top: 7rem; }
+  .skills-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-top: 2.5rem; }
+  article { padding: 2.4rem; border: 1px solid #80808066; border-radius: 1.2rem; }
+  article p { margin-bottom: 0; font-size: 1.6rem; }
+  @media (max-width: 960px) {
+    .about-intro { grid-template-columns: 1fr; gap: 2rem; }
+    .portrait { max-width: 240px; }
+    .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
-  .hability{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img{
-      width: 3.4rem;
-    }
-  }
-
-  h2{
-    display: inline-block;
-    margin-bottom: 2rem;
-    // border-bottom: 0.2rem solid var(--blue);
-    font-size :3rem;
-    margin-top: 0rem;
-    color: var(--green);
-  }
-
-  h3{
-    margin-top: 2rem;
-    color: var(--green);
-  }
-
-  p{
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
-  }
-  
-  
-
-  .about-image{
-    text-align: center;
-   img{
-     margin-top: 2rem;
-     width: 75%;
-     border-radius: 50%;
-     object-fit: cover;
-     aspect-ratio: 1/1;
-     filter: grayscale(0);
-     transition: filter 0.5s;
-     &:hover{
-       filter: grayscale(0);
-     }
-   }
-  }
-
-  @media only screen and (max-width: 480px) {
-    .about-image {
-      max-width: 100%;
-      margin-top: 4rem;
-      img{
-        margin-top: 2rem;
-        width: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-        aspect-ratio: 1/1;
-        filter: grayscale(0);
-        transition: filter 0.5s;
-        &:hover{
-          filter: grayscale(0);
-        }
-    }
-  }
-
-  @media (max-width: 960px){
-    display: block;
-    text-align: center;
-    
-    .hard-skills{
-      justify-content: center;
-    }
-    .about-image{
-      display: flex;
-      max-width: 100%;
-      img{
-        margin-top: 2rem;
-        width: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-        aspect-ratio: 1/1;
-        filter: grayscale(0);
-        transition: filter 0.5s;
-        &:hover{
-          filter: grayscale(0);
-        }
-    }
-    
-    
-  }
-
-`
+  @media (max-width: 600px) { .skills-grid { grid-template-columns: 1fr; } }
+`;

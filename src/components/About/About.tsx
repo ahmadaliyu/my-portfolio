@@ -1,101 +1,44 @@
 import { Container } from "./styles";
-import reactIcon from "../../assets/react-icon.svg";
-import jsIcon from "../../assets/js-icon.svg";
-import typescriptIcon from "../../assets/typescript-icon.svg";
-import htmlIcon from "../../assets/html-icon.svg";
-import cssIcon from "../../assets/css-icon.svg";
-import nodeIcon from "../../assets/node-icon.svg";
-import ScrollAnimation from "react-animate-on-scroll";
+
+const skills = [
+  ["Web & frontend", "React, Next.js, TypeScript, JavaScript, Redux, HTML, CSS, Tailwind CSS, Styled Components"],
+  ["Mobile applications", "React Native, Flutter, Kotlin · Cross-platform interfaces and offline functionality"],
+  ["Backend & APIs", "NestJS, Laravel, C#, Node.js, REST APIs, GraphQL, Firebase"],
+  ["AI", "AI integration and AI-assisted software development"],
+  ["DevOps & delivery", "Docker, CI/CD, GitHub Actions, Codemagic, Git · Build and deployment automation"],
+  ["Architecture & quality", "System design, component architecture, state management, performance optimization, maintainability"],
+];
 
 export function About() {
   return (
     <Container id="about">
-      <div className="about-text">
-        <ScrollAnimation animateIn="fadeInLeft">
-          <h2>About me</h2>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
-          <p>
-            Hi there! I'm Ahmad Aliyu, a seasoned Frontend Engineeer (React | React Native | Nextjs) with over 8 years of experience building scalable web and mobile applications.
-          </p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
-          <p>
-            I specialize in React, Next.js, React Native, TypeScript, and Kotlin, creating responsive and high-performance solutions for both web and mobile platforms.
-          </p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
-          <p>
-            I've worked with various companies across different sectors, from agriculture tech to fintech, delivering impactful software solutions that drive business growth.
-          </p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={400}>
-          <div className="experience">
-            <h3>Work Experience:</h3>
-            
-            <h4>Frontend Engineeer (React | React Native | Nextjs)</h4>
-            <p>Kredi (Financial Institution) | Current</p>
-            <p>Building fintech solutions for digital banking and payments</p>
-            
-            <h4>Frontend Engineeer (React | React Native | Nextjs)</h4>
-            <p>Loopscribe</p>
-            <p>Developed web and mobile applications</p>
-            
-            <h4>Frontend Engineeer (React | React Native | Nextjs)</h4>
-            <p>White Axis (Ride-Hailing Platform)</p>
-            <p>Built Bolt-like transportation solutions</p>
-            
-            <h4>Frontend Engineeer (React | React Native | Nextjs)</h4>
-            <p>NippyEats</p>
-            <p>Developed food delivery platform</p>
-            
-            <h4>Frontend Engineeer (React | React Native | Nextjs)</h4>
-            <p>Everyfarmer Ecosystem</p>
-            <p>Created agricultural technology solutions</p>
-          </div>
-        </ScrollAnimation>
-
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
-          <h3>Here are my main skills:</h3>
-        </ScrollAnimation>
-        <div className="hard-skills">
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.10 * 1000}>
-              <img src={reactIcon} alt="React" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.11 * 1000}>
-              <img src={jsIcon} alt="JavaScript" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
-              <img src={typescriptIcon} alt="TypeScript" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>
-              <img src={nodeIcon} alt="Node.js" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.14 * 1000}>
-              <img src={htmlIcon} alt="HTML" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.15 * 1000}>
-              <img src={cssIcon} alt="CSS" />
-            </ScrollAnimation>
-          </div>
+      <div className="about-intro">
+        <div>
+          <h2>Engineering across the product</h2>
+          <p>I'm Ahmad Aliyu, a software engineer with 8+ years of experience building web and mobile applications across fintech, logistics, transportation, food delivery, and agritech.</p>
+          <p>My strongest foundation is in React, Next.js, React Native, and TypeScript. I also work with Flutter, backend services, AI, and DevOps, connecting the user experience with the systems that support it.</p>
+          <p>I focus on software that is clear to use, reliable in everyday workflows, and straightforward for teams to maintain. From reusable interfaces and API integration to system design and delivery automation, I bring a practical understanding of the full development lifecycle.</p>
+        </div>
+        <img className="portrait" src={`${process.env.PUBLIC_URL}/Images/ahmad-aliyu.png`} alt="Ahmad Aliyu" loading="lazy" width="320" height="320" />
+      </div>
+      <div id="skills" className="skills-section">
+        <h2>Technical expertise</h2>
+        <p>A strong frontend and mobile foundation, with the backend and delivery skills to take a product further.</p>
+        <div className="skills-grid">
+          {skills.map(([title, description]) => (
+            <article key={title}><h3>{title}</h3><p>{description}</p></article>
+          ))}
         </div>
       </div>
-      <div className="about-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={0.21 * 1000}>
-          <img src="https://res.cloudinary.com/dgyy2fwlu/image/upload/v1766940325/WhatsApp_Image_2025-12-28_at_17.44.11_x4uc2n.jpg" alt="Ahmad Aliyu" />
-        </ScrollAnimation>
+      <div className="approach">
+        <h2>How I approach the work</h2>
+        <div className="skills-grid">
+          <article><h3>Understand the problem</h3><p>Start with the people using the product, the business goal, and the constraints that shape a useful solution.</p></article>
+          <article><h3>Design for change</h3><p>Choose clear component boundaries, predictable data flow, and practical architecture that the team can build on.</p></article>
+          <article><h3>Deliver with care</h3><p>Pay attention to performance, failure states, and release workflows so features work beyond the happy path.</p></article>
+        </div>
       </div>
     </Container>
-  )
+  );
 }
+

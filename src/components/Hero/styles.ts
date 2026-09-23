@@ -4,7 +4,10 @@ export const Container = styled.section`
   padding-top: 15%;
   display: flex;
   justify-content: space-between;
-  gap: 8rem;
+  gap: 4rem;
+  .hero-text { flex: 1; min-width: 0; }
+  .small-resume { max-width: 58rem; line-height: 1.75; }
+  .work-link { display: inline-block; color: inherit; text-decoration: underline; margin: 0 2rem 2rem 0; }
   background: rgba(0,0,0,0);
   .hero-text{
     & > p{
@@ -42,12 +45,14 @@ export const Container = styled.section`
 
   .button{
     margin-top: 5rem;
-    padding: 1.4rem 6rem;
+    padding: 1.4rem 3rem;
+    display: inline-block;
   }
 
   .hero-image{
     img{
-      max-width: 500px;
+      width: 100%;
+      max-width: 400px;
     }
   }
 

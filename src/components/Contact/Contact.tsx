@@ -8,9 +8,9 @@ export function Contact(){
   return(
     <Container id="contact">
       <header>
-        <h2>Contact</h2>
-        <p>Ready to get started on your project? </p>
-        <p>Contact me now for a Free consultation.</p>
+        <h2>Let's build something useful</h2>
+        <p>Looking for an engineer for your team or your next product?</p>
+        <p>Based in Nigeria and open to remote opportunities. Tell me about your role, project, or technical challenge.</p>
       </header>
       <div className="contacts">
         <div>

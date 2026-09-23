@@ -1,57 +1,36 @@
-# Ahmad Aliyu - Frontend Engineeer (React | React Native | Nextjs) Portfolio
+# Ahmad Aliyu — Software Engineer
 
-![Ahmad Aliyu](https://res.cloudinary.com/dgyy2fwlu/image/upload/w_800,h_800,c_fill,g_face,r_max,b_rgb:ffffff,bo_20px_solid_rgb:ffffff/v1766940325/WhatsApp_Image_2025-12-28_at_17.44.11_x4uc2n.jpg)
- 
-## About Me
+Professional portfolio covering web, mobile, backend development, AI, and DevOps.
 
-This is my professional portfolio website showcasing my experience as a Frontend Engineeer (React | React Native | Nextjs) with 8+ years in building scalable web and mobile applications.
+## Expertise
 
-I specialize in:
-- **Mobile Development**: React Native, Kotlin
-- **Web Development**: React, Next.js, TypeScript, JavaScript
-- **Styling**: Tailwind CSS, Styled Components
+- Web: React, Next.js, TypeScript, JavaScript, Redux, Tailwind CSS, Styled Components.
+- Mobile: React Native, Flutter, Kotlin.
+- Backend: NestJS, Laravel, C#, Node.js, REST APIs, GraphQL, Firebase.
+- Delivery: Docker, CI/CD, GitHub Actions, Codemagic, Git.
+- Engineering: system design, reusable components, state management, performance, and maintainability.
+- AI: AI integration and AI-assisted development.
 
-## Work Experience
+## Portfolio content
 
-- **Kredi** - Financial Institution (Current)
-- **Loopscribe** - Content Management Platform
-- **White Axis** - Ride-Hailing Platform (Similar to Bolt)
-- **NippyEats** - Food Delivery Platform
-- **Everyfarmer Ecosystem** - Agricultural Technology
+Introduction, grouped technical skills, engineering approach, selected work and contributions, resume download, and contact links. Selected work includes LoopScribe, Global Cargo Logistics, WhiteAxis, Kredi, NippyEats, and Everyfarmer Ecosystem.
 
-## Technologies Used:
-- React
-- TypeScript
-- Styled Components
-- React Animate on Scroll
-- React Router
+The site uses React, TypeScript, and Styled Components. Content is maintained in `src/components/Hero`, `About`, `Project`, and `Contact`; search and social metadata live in `public/index.html`. The existing downloadable resume is `src/assets/AHMADEE_PT.pdf`.
 
-## Contact
-
-- **Email**: aliyuahmad1996@gmail.com
-- **Phone**: +234 813 294 3547
-- **GitHub**: [@ahmadaliyu](https://github.com/ahmadaliyu)
-- **LinkedIn**: [Ahmad Aliyu](https://www.linkedin.com/in/ahmad-aliyu-b13345178)
-
-## To Run This Project:
+## Development
 
 ```bash
-# Install dependencies
 npm install --legacy-peer-deps
-
-# Start development server
 npm start
-
-# Build for production
 npm run build
 ```
 
-The application will run on `http://localhost:3000`
+## Contact
 
-## Deployment
+- Email: aliyuahmad1996@gmail.com
+- GitHub: https://github.com/ahmadaliyu
+- LinkedIn: https://www.linkedin.com/in/ahmad-aliyu-b13345178
 
-This portfolio is deployed on Vercel. Any push to the `main` branch will trigger an automatic deployment.
+## Content maintenance
 
----
-
-© 2025 Ahmad Aliyu. All rights reserved.
+Keep role dates, project links, qualifications, and measurable outcomes aligned with verified records. Add specific AI and backend case studies when project details are available. Update the downloadable resume alongside future employment changes.
